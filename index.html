@@ -16,7 +16,7 @@
         }
 
         .container {
-            padding: 20px;
+            padding: 1rem;
             background-color: #fff;
         }
 
@@ -36,20 +36,22 @@
             flex-grow: 1;
             display: flex;
             flex-wrap: wrap;
-            gap: 5pt;
-            justify-content: center; /* Центрирование элементов */
+            gap: .3rem;
+            justify-content: center;
         }
 
         .element {
             display: flex;
             justify-content: space-between;
             border: 1px solid #dee2e6;
-            padding: 5pt;
-            width: 300pt; /* Фиксированная ширина для единообразия */
+            padding: .5rem;
+            min-width: 25rem;
+            flex-grow: 1;
+            flex-wrap: wrap;
             display: flex;
             flex-direction: column;
             align-items: center;
-            border-radius: 10pt;
+            border-radius: 1rem;
             background-color: #fff;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
             transition: transform 0.2s ease-in-out;
@@ -67,22 +69,25 @@
         }
 
         .element-buttons {
+            width: 100%;
             display: flex;
-            justify-content:space-between;
-            gap: .5rem;
+            flex-wrap: wrap;
+            flex-direction: row;
+            gap: .4rem;
         }
 
         .element-buttons a {
+            min-width: 6rem;
             display: flex;
             justify-content: center;
             align-items: center;
             flex-grow: 1;
             flex-basis: 0;
-            padding: .5rem;
+            padding: .7rem;
             cursor: pointer;
             border: none;
             border-radius: .8rem;
-            background-color: #007bff;
+            background-color: #2383e9;
             color: #fff;
             font-size: 1rem;
             text-align:center;
@@ -99,7 +104,7 @@
 
     <div class="container">
         <h1>ИКБО-20-23</h1>
-        <p>Здесь всё то, что может быть нужно</p>
+        <p>Здесь всё то, что может быть нужно (ну почти)</p>
 
         <div class="element-container" id="element-container">
             <!-- Элементы будут добавляться здесь -->
@@ -115,7 +120,7 @@
             <div class="element">
                 <h3>Дизайн мобильных приложений</h3>
                 <div class="element-buttons">
-                    <a href="https://docs.google.com/spreadsheets/d/1aNWQkRmDTscb-HTEsM3ieB9ssqmNgIxi49lj_355gWo/edit">Табличка проектов</a>
+                    <a href="https://docs.google.com/spreadsheets/d/1qk7XJW33mp6WsKjVh4gbwX5mrqeR-S6KjbKIthfZ-kY/edit">Табличка проектов</a>
                 </div>
             </div>
 
@@ -133,6 +138,15 @@
                     <a href="https://github.com/true-grue/kispython">Репозиторий курса</a>
                 </div>
             </div>
+
+            <div class="element">
+                <h3>Всякая поебня</h3>
+                <div class="element-buttons">
+                    <a href="https://online-edu.mirea.ru/my/">СДО</a>
+                    <a href="https://lk.mirea.ru/">ЛКС</a>
+                </div>
+            </div>
+            
         </div>
     </div>
 
